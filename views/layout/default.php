@@ -38,7 +38,8 @@
 		<h1>Frawst Framework</h1>
 		<ul id="nav">
 			<li><?=$this->Html->appLink('', 'Home')?></li>
-			<li><?=$this->Html->appLink('code', 'Code')?></li>
+			<li><?=$this->Html->link('http://github.com/dtomasiewicz/Frawst', 'Code')?></li>
+			<li><?=$this->Html->link('http://redmine.frawst.com/projects/frawst', 'Issues')?></li>
 			<li><?=$this->Html->appLink('documentation', 'Documentation')?></li>
 			<li><?=$this->Html->appLink('about', 'About')?></li>
 		</ul>
