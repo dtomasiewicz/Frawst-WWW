@@ -14,7 +14,7 @@
 <html lang="en-ca">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title><?=isset($title) ? $title.' - ' : ''?>Unnamed Application</title>
+	<title><?=isset($title) ? $title.' - ' : ''?>Frawst Framework</title>
 	<link rel="icon" type="image/x-icon" href="<?=$this->webroot('public/images/favicon.ico')?>">
 	
 	<link rel="stylesheet" href="<?=$this->webroot('public/css/core.css')?>">
