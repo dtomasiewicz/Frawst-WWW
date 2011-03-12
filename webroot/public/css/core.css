@@ -1,0 +1,352 @@
+/**
+ * #02111f = very dark blue
+ * #082845 = dark blue
+ * #0084ff = light blue
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #082845;
+	font: 0.75em/1.5em Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Helvetica, sans-serif;
+}
+
+input, select {
+	font-size: 0.95em;
+	padding: 3px;
+	vertical-align: middle;
+}
+
+input[type=submit], input[type=button], button {
+	border-radius: 5px;
+	border: 1px solid #b9b9b9;
+	background: #e9e9e9;
+	font-weight: bold;
+	text-shadow: 0 0 2px #fff;
+}
+
+input[type=submit]:hover, input[type=button]:hover, button:hover,
+input[type=submit]:focus, input[type=button]:focus, button:focus {
+	background: #f9f9f9;
+	color: #060;
+	cursor: pointer;
+	-webkit-box-shadow: 0 0 2px rgba(0, 128, 0, .5);
+}
+
+input[type=text], input[type=password] {
+	border: 1px solid #d9d9d9;
+}
+
+a:link, a:visited {
+	color: #000;
+	text-decoration: underline;
+}
+
+a:focus, a:hover, a:active {
+	color: #003366;
+}
+
+label, input[type=checkbox] {
+	cursor: pointer;
+}
+
+.clear {
+	clear: both;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto 30px auto;
+}
+
+#header {
+	height: 90px;
+	position: relative;
+}
+
+#header h1 {
+	position: absolute;
+	top: 30px;
+	left: 15px;
+	line-height: 30px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+	font-weight: bold;
+	color: #fff;
+}
+
+#nav {
+	position: absolute;
+	top: 30px;
+	right: 15px;
+	height: 30px;
+}
+
+#nav li {
+	float: left;
+	display: block;
+	margin-left: 1px;
+}
+#nav li a {
+	display: block;
+	line-height: 30px;
+	padding: 0 20px;
+	text-decoration: none;
+	color: #000;
+	background: #fff;
+}
+#nav li:first-child a {
+	border-radius: 3px 0 0 3px;
+}
+#nav li:last-child a {
+	border-radius: 0 3px 3px 0;
+}
+#nav:hover li a {
+	opacity: .5;
+}
+#nav:hover li a:hover {
+	line-height: 36px;
+	margin-top: -3px;
+	opacity: 1;
+	border-radius: 3px;
+}
+
+#feedback {
+	width: 960px;
+}
+#feedback ul {
+	list-style: none;
+}
+
+.feedback {
+	padding: 10px 10px 10px 35px;
+	border-bottom: 2px solid #666;
+	margin: 0;
+}
+
+.feedback0 { background: #b9F9a9 url("../images/Boolean/Signage/OK.png") 10px 10px no-repeat; border-color: #79cc79; }
+.feedback1 { background: #f9f999 url("../images/Boolean/Signage/Caution.png") 10px 10px no-repeat; border-color: #ffcc66 }
+.feedback2 { background: #F9b9b9 url("../images/Boolean/Signage/Denied.png") 10px 10px no-repeat; border-color: #c66 }
+
+#page {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+	position: relative;
+}
+
+#content {
+	padding: 20px;
+	min-height: 300px;
+}
+#page.twoCol #content {
+	margin-right: 220px;
+}
+#sidebar {
+	color: #fff;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	width: 220px;
+	border-radius: 0 10px 10px 0;
+	background: #02111f;
+}
+.sidebar-documentation {
+	padding: 15px;
+	width: 190px;
+}
+#sidebar a	{
+	color: #fff;
+	text-decoration: none;
+}
+#sidebar a:hover {
+	text-decoration: underline;
+}
+#page #sidebar ul {
+	padding-left: 0;
+}
+#page #sidebar ul ul {
+	margin: 0 0 0 10px;
+}
+#sidebar li {
+	list-style: none;
+}
+
+#page p, #page table, #page ul, #page ol,
+#page h1, #page h2, #page h3, #page h4, #page h5, #page h6 {
+	margin-bottom: 15px;
+}
+
+#page fieldset {
+	margin: 0 15px 15px 15px;
+	border: 0;
+}
+
+#page h1 {
+	text-shadow: 2px 2px 0 #d9d9d9;
+	color: #333;
+	padding-bottom: 3px;
+}
+
+#page ul {
+	padding-left: 30px;
+}
+
+#page table {
+	width: 100%;
+	border: 1px solid #ccc;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	-webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, .25);
+}
+
+#page table th {
+	background: #d9d9d9;
+	padding: 2px;
+	border: 1px solid #ccc;
+	border-right-color: #b9b9b9;
+	border-bottom-color: #b9b9b9;
+}
+
+#page table td {
+	padding: 2px;
+	border: 1px solid transparent;
+}
+
+#page table tr:hover td {
+	background: #eee;
+	border-top-color: #e3e3e3;
+	border-right-color: #cfcfcf;
+	border-bottom-color: #cfcfcf;
+	border-left-color: #e3e3e3;
+}
+
+#page table .checkboxCell {
+	text-align: center;
+	vertical-align: middle;
+	width: 20px;
+}
+
+#page table .selectedRecord td {
+	background: #ccc;
+}
+
+#lightbox-backdrop {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .75;
+}
+#lightbox-content {
+	display: none;
+	position: fixed;
+	top: 20%;
+	right: 20%;
+	bottom: 20%;
+	left: 20%;
+	overflow: auto;
+	padding: 15px;
+	border: 1px solid #000;
+	background: #fff;
+}
+
+#footer {
+	clear: both;
+	padding: 10px;
+	font-size: 0.8em;
+	color: #fff;
+	opacity: .5;
+	text-align: center;
+}
+
+.module {
+	margin: 15px 0;
+	border-top: 2px solid #c9c9c9;
+	border-bottom: 2px solid #c9c9c9;
+	background: #f9f9f9;
+	padding: 10px 10px 0 10px;
+}
+
+#page label.aligned span {
+	display: inline-block;
+	width: 200px;
+}
+
+label.required span {
+	font-weight: bold;
+}
+
+.warning {
+	color: #f00;
+	font-weight: bold;
+}
+
+.help {
+	cursor: help;
+	font-weight: bold;
+	color: #39c;
+	position: relative;
+	text-shadow: 1px 1px #ccc;
+}
+
+.help .helpText {
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .4);
+	font-weight: normal;
+	color: #000;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 275px;
+	border: 1px solid #666;
+	background: #f9f9f9;
+	padding: 5px;
+}
+
+.orderable .orderable-enabled {
+	cursor: move;
+}
+
+.fieldErrors {
+	color: #f00;
+}
+
+html .Frawst-Debug {
+	overflow: hidden;
+}
+html .Frawst-Debug:hover {
+	position: fixed;
+	width: 80%;
+	height: 80%;
+	top: 10%;
+	left: 10%;
+	background: #fff;
+	border: 3px solid #333;
+	padding: 20px;
+	margin: -21px 0 0 -21px;
+	overflow: auto;
+	border-radius: 10px;
+}
+.Frawst-Debug h1 {
+	margin-bottom: 10px;
+	color: #f00;
+	line-height: 1.5em;
+}
+html .Frawst-Debug pre {
+	display: none;
+	font-size: 1.2em;
+}
+html .Frawst-Debug:hover pre {
+	display: block;
+}
