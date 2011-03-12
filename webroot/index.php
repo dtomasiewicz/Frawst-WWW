@@ -1,1 +1,0 @@
-<?php require(dirname(dirname(dirname(__FILE__))).'/Frawst/http.php');
